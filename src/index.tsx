@@ -1,5 +1,5 @@
 import type { Context } from "react"
-import { createContext } from "react"
+import React, { createContext } from "react"
 
 export function createProvider<T extends () => any>(useProvider: T) {
   type ContextProps = ReturnType<typeof useProvider>
