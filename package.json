@@ -1,6 +1,6 @@
 {
   "name": "puro",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "A simple utility library to create react context/provider with proper typing support",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -17,8 +17,7 @@
     "build:type": "tsup src/index.tsx --dts-only --dts-resolve",
     "build:compile": "tsup src/index.tsx --format esm --minify --clean",
     "test": "jest",
-    "clean": "rimraf dist",
-    "prepublishOnly": "run-s clean build"
+    "prepublishOnly": "run-s build"
   },
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "repository": {
@@ -43,10 +42,8 @@
     "@plasmo-corp/rps": "1.2.1",
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "@types/node": "17.0.30",
-    "esbuild": "0.14.38",
     "jest": "27.5.1",
     "prettier": "2.6.2",
-    "rimraf": "3.0.2",
     "ts-jest": "27.1.4",
     "tsup": "5.12.6",
     "typescript": "4.6.4"

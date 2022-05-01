@@ -20,7 +20,7 @@
     "target": "es6",
     "allowJs": true,
     "importsNotUsedAsValues": "error",
-    "jsx": "react"
+    "jsx": "react-jsx"
   },
   "include": ["src/**/*.tsx"]
 }
