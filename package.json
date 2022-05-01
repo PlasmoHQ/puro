@@ -1,6 +1,6 @@
 {
   "name": "puro",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple utility library to create react context/provider with proper typing support",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,10 +20,10 @@
     "clean": "rimraf dist",
     "prepublishOnly": "run-s clean build"
   },
-  "author": "Plasmo Corp. <support@plasmo.com>",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/plasmo-corp/qtt.git"
+    "url": "https://github.com/plasmo-corp/puro.git"
   },
   "license": "MIT",
   "keywords": [
