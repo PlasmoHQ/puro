@@ -19,7 +19,8 @@
     "module": "commonjs",
     "target": "es6",
     "allowJs": true,
-    "importsNotUsedAsValues": "error"
+    "importsNotUsedAsValues": "error",
+    "jsx": "preserve"
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.tsx"]
 }
