@@ -16,11 +16,11 @@
     "noImplicitAny": false,
     "moduleResolution": "node",
     "isolatedModules": true,
-    "module": "commonjs",
+    "module": "esnext",
     "target": "es6",
     "allowJs": true,
     "importsNotUsedAsValues": "error",
-    "jsx": "preserve"
+    "jsx": "react"
   },
   "include": ["src/**/*.tsx"]
 }
