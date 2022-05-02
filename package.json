@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@jest/globals": "28.0.3",
-    "@plasmo-corp/rps": "workspace:1.2.1",
+    "@plasmo-corp/rps": "1.2.1",
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "@types/node": "17.0.31",
     "@types/react": "18.0.8",
