@@ -13,9 +13,7 @@
     "dev": "run-p dev:*",
     "dev:compile": "tsup src/index.tsx --watch --sourcemap",
     "dev:test": "jest --watch",
-    "build": "run-p build:*",
-    "build:type": "tsup src/index.tsx --dts-only --dts-resolve",
-    "build:compile": "tsup src/index.tsx --format esm --minify --clean",
+    "build": "tsup src/index.tsx  --dts-resolve --format esm --minify --clean",
     "test": "jest",
     "prepublishOnly": "run-s build"
   },
@@ -37,8 +35,8 @@
     "react": "18.1.0"
   },
   "devDependencies": {
-    "@jest/globals": "28.0.3",
-    "@plasmo-corp/rps": "1.2.1",
+    "@jest/globals": "27.5.1",
+    "@plasmo-corp/rps": "workspace:*",
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "@types/node": "17.0.31",
     "@types/react": "18.0.8",
