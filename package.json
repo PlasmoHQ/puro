@@ -1,6 +1,6 @@
 {
   "name": "puro",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A simple utility library to create react context/provider with proper typing support",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
