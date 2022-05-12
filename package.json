@@ -1,6 +1,6 @@
 {
   "name": "puro",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "description": "A simple utility library to create react context/provider with proper typing support",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -31,10 +31,8 @@
   "peerDependencies": {
     "react": ">=17 || >=18"
   },
-  "dependencies": {
-    "react": "18.1.0"
-  },
   "devDependencies": {
+    "react": "18.1.0",
     "@jest/globals": "28.1.0",
     "@plasmo-corp/rps": "workspace:*",
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
