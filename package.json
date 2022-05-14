@@ -20,7 +20,7 @@
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/plasmo-corp/puro.git"
+    "url": "https://github.com/PlasmoHQ/puro.git"
   },
   "license": "MIT",
   "keywords": [
