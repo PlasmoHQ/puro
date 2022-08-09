@@ -34,7 +34,7 @@
   "devDependencies": {
     "@jest/globals": "28.1.3",
     "@jest/types": "28.1.3",
-    "@plasmohq/prettier-plugin-sort-imports": "workspace:1.2.0",
+    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@plasmohq/storage": "workspace:*",
     "@types/node": "18.6.5",
     "@types/react": "18.0.17",
