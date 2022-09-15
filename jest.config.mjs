@@ -4,14 +4,16 @@
 
 const config = {
   clearMocks: true,
-  moduleFileExtensions: ["js", "ts"],
-  preset: "ts-jest/presets/default-esm",
+  moduleFileExtensions: ["js", "tsx"],
   globals: {
     "ts-jest": {
       useESM: true
     }
   },
   testMatch: ["**/*.test.ts"],
+  transform: {
+    "^.+.tsx?$": ["ts-jest", { isolatedModules: true, useESM: true }]
+  },
   verbose: true,
   moduleNameMapper: {
     "^~(.*)$": "<rootDir>/dist/$1",
