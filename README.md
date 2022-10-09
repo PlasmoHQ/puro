@@ -14,9 +14,8 @@ pnpm add puro
 
 ```tsx
 // providers/view-provider.tsx
-import { useContext, useState } from "react"
-
 import { createProvider } from "puro"
+import { useContext, useState } from "react"
 
 // A simple example of a provider hook
 const useViewProvider = () => {
@@ -26,8 +25,8 @@ const useViewProvider = () => {
   return {
     x,
     y,
-    setX:(newX: string | number) => _setX(parseFloat(newX)),
-    setY:(newY: string | number) => _setY(parseFloat(newY))
+    setX: (newX: string | number) => _setX(parseFloat(newX)),
+    setY: (newY: string | number) => _setY(parseFloat(newY))
   }
 }
 
@@ -38,12 +37,13 @@ export const ViewProvider = Provider
 export const useView = () => useContext(BaseContext)
 ```
 
-### Wrap your top component with the provider, here's a NextJS example using _app.tsx:
+### Wrap your top component with the provider, here's a NextJS example using \_app.tsx:
 
 ```tsx
 // _app.tsx
-import { ViewProvider } from "~providers/view-provider"
 import type { AppProps } from "next/app"
+
+import { ViewProvider } from "~providers/view-provider"
 
 function CoolApp({ Component, pageProps }: AppProps) {
   return (
@@ -60,25 +60,20 @@ export default CoolApp
 
 ```tsx
 // components/set-coordinate.tsx
-import { useView } from "~providers/view-provider"
 import type { AppProps } from "next/app"
+
+import { useView } from "~providers/view-provider"
 
 export function XInput() {
   const { x, setX } = useView()
-  return (
-    <input value={x} onChange={(e)=> setX(e.target.value)}/>
-  )
+  return <input value={x} onChange={(e) => setX(e.target.value)} />
 }
 
 export function YInput() {
   const { x, setY } = useView()
-  return (
-    <input value={y} onChange={(e)=> setY(e.target.value)}/>
-  )
+  return <input value={y} onChange={(e) => setY(e.target.value)} />
 }
-
 ```
-
 
 ## Development
 
@@ -110,4 +105,4 @@ The [Battle Station](https://www.plasmo.com/s/chat) is open for ambassadors.
 
 # License
 
-[MIT](./license) ⭐ [Plasmo Corp.](https://plasmo.com)
+[MIT](./LICENSE) ⭐ [Plasmo Corp.](https://plasmo.com)
