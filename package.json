@@ -1,6 +1,6 @@
 {
   "name": "puro",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "A simple utility library to create react context/provider with proper typing support",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -36,13 +36,13 @@
     "@jest/types": "29.3.1",
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@plasmohq/rps": "workspace:*",
-    "@types/node": "18.11.9",
-    "@types/react": "18.0.25",
+    "@types/node": "18.11.15",
+    "@types/react": "18.0.26",
     "jest": "29.3.1",
-    "prettier": "2.8.0",
+    "prettier": "2.8.1",
     "react": "18.2.0",
     "ts-jest": "29.0.3",
     "tsup": "6.5.0",
-    "typescript": "4.9.3"
+    "typescript": "4.9.4"
   }
 }
