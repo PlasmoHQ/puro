@@ -3,9 +3,14 @@ import { createContext } from "react"
 
 type ProviderHook = (_?: any) => any
 
+export type PuroReactProps = { children?: ReactNode }
+
 export function createProvider<T extends ProviderHook>(useProvider: T) {
   type ContextProps = ReturnType<typeof useProvider>
-  type ProviderProps = Parameters<T>[0] & { children?: ReactNode }
+  type Param0 = Parameters<T>[0]
+  type ProParam = Param0 extends undefined ? {} : Param0
+  type ProviderProps = PuroReactProps & ProParam
+
   const BaseContext = createContext<ContextProps>(null)
 
   const Provider = ({ children = null, ...props }: ProviderProps) => {
@@ -26,7 +31,9 @@ export function createFlexibleProvider<T extends ProviderHook>(
   useProvider: T,
   ContextList: Context<Partial<ReturnType<T>>>[]
 ) {
-  type ProviderProps = Parameters<T>[0] & { children?: ReactNode }
+  type Param0 = Parameters<T>[0]
+  type ProParam = Param0 extends undefined ? {} : Param0
+  type ProviderProps = PuroReactProps & ProParam
 
   const Provider = ({ children = null, ...props }: ProviderProps) => {
     const provider = useProvider(props)
@@ -51,7 +58,10 @@ export function createNestedProvider<T extends ProviderHook>(
     type ContextProps = ReturnType<typeof p>
     return createContext<ContextProps>(null)
   })
-  type ProviderProps = Parameters<T>[0] & { children?: ReactNode }
+
+  type Param0 = Parameters<T>[0]
+  type ProParam = Param0 extends undefined ? {} : Param0
+  type ProviderProps = PuroReactProps & ProParam
 
   const Provider = ({ children = null, ...props }: ProviderProps) =>
     BaseContexts.reduce((output, BaseContext, i) => {
