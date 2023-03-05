@@ -19,7 +19,7 @@
     "module": "esnext",
     "target": "es6",
     "allowJs": true,
-    "importsNotUsedAsValues": "error",
+    "verbatimModuleSyntax": true,
     "jsx": "react-jsx"
   },
   "include": ["src/**/*.tsx"]
